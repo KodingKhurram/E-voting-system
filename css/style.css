@@ -1,0 +1,247 @@
+body{
+  /*background-color: #6495ed;*/
+  background-color: #1B4F72;
+}
+.sliderimg{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+#slider{
+    width: 90%;
+    height: 500px;
+    position: relative;
+    border: 8px solid black;
+    box-shadow: 0px 0px 2px 2px #ccc;
+    border-radius: 20px;
+}
+#slidbut
+{
+  text-align: center;
+  border:none;
+  background-color: rgba(0,0,0,0.4);
+  font-size: 40px;
+	font-family:arial black;
+  color: white;
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+	width: 60px;
+}
+.next{
+    border-radius: 50%;
+    float: right;
+}
+.prew{
+    border-radius: 50%;
+}
+.popup {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    }
+  .popup-content
+  {
+    margin-top: 100px;
+    text-align: center;
+    width: 350px;
+    height:auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid black;
+  }
+  .popup-content input[type='submit']
+      {
+        width: 90%;
+        background-color: green;
+        height: 30px;
+        color: white;
+        border: none;
+        border-radius:10px;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .popup-content input[type='reset']
+          {
+            width: 90%;
+            background-color: red;
+            height: 30px;
+            color: white;
+            border: none;
+            border-radius:10px;
+            cursor: pointer;
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+  .popup-content input[type=search], input[type=text], input[type=password], select,input[type=email]
+      {
+        border-radius: 10px;
+          width: 90%;
+          padding: 5px 5px 5px 10px;
+          display: inline-block;
+          margin: 8px 0;
+          border-bottom: 1px solid purple;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+      }
+    .close
+    {
+      font-size: 35px;
+      color: black;
+      font-family: arial black;
+      position: absolute;
+      top:100;
+    }
+    .close:hover
+    {
+      cursor: pointer;
+      color: red;
+    }
+
+    .navigator
+    {
+      background-color: rgba(0, 0, 0, 0.2);
+      height: 50px;
+      position: absolute;
+      top:auto;
+      width: 100%;
+      z-index: 2;
+    }
+    .navigator img
+    {
+      height: 50px;
+      width: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #confirmation
+    {
+      background-color: blue;
+      color:white;
+      height:50px;
+      width: 250px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+    .electiontable
+    {
+      width: 90%;
+      text-align: center;
+    }
+    .electiontable th{
+      height: 30px;
+      color: white;
+      background-color: brown;
+      font-size: 20px;
+    }
+    .electiontable td{
+      background-color: white;
+      font-size: 20px;
+    }
+    .votenow hover
+    {
+      background-color: blue;
+    }
+    .logout
+    {
+      background-color: blue;
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      padding-top: 10px;
+      text-align: center;
+      border: 2px solid black;
+    }
+    .logout a
+    {
+      text-decoration: none;
+      color: white;
+    }
+    .footer
+    {
+      width: 100%;
+      font-size: 20px;
+      background-color: #1B4F72;
+    }
+    .footernav
+    {
+      float:right;margin-right:20px;margin-top:10px;
+    }
+    .votes
+    {
+      height: 50px;
+      font-size:25px;
+    }
+    .sub input[type='submit']
+        {
+          width: 30%;
+          background-color: green;
+          height: 30px;
+          color: white;
+          font-weight: bold;
+          border: 1px solid white;
+          border-radius:10px;
+          cursor: pointer;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      button
+      {
+          width: 80%;
+          background-color: green;
+          height: 30px;
+          color: white;
+          font-weight: bold;
+          border: 1px solid white;
+          border-radius:10px;
+          cursor: pointer;
+          margin-top: 5px;
+          margin-bottom: 5px;
+      }
+    [type=radio]
+    {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    [type=radio] + img{
+      cursor: pointer;
+    }
+    [type=radio]:checked + img{
+      background-color: red;
+    }
+    @media screen and (max-width:600px)
+    {
+        .sliderimg{
+            width: 100%;
+            height: 250px;
+        }
+        #slider{
+            width: 100%;
+            height: 250px;
+        }
+        .popup-content
+        {
+          width:300px;
+        }
+    }
+    @viewport
+    {
+      zoom:1.0;
+      width:extend-to-zoom;
+    }
+    @-ms-viewport
+    {
+      width:extend-to-zoom;
+      zoom:1.0;
+    }
